@@ -2,3 +2,30 @@
 @import 'style/fonts';
 @import 'style/var';
 @import 'style/style';
+
+
+body {
+  background-image: url("img/background-left.jpg");
+  background-size: cover;
+  height: 100vh;
+  //background-position: top right 50vw;
+  //background-size: 50vw 100vh;
+  //background-size: 50% auto;
+  //height: 100vh;
+  //position: relative;
+  background-repeat: no-repeat;
+  //overflow: auto;
+}
+
+.homepage {
+  //display: flex;
+  //justify-content: space-evenly;
+}
+
+
+//.homepage {
+//  background-image: url("img/background-left.jpg");
+//  width: 50%;
+//  height: 100vh;
+//  background-size: cover;
+//}

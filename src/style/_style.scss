@@ -1,15 +1,30 @@
 body {
-  font-family: 'Montserrat';
-  background-color: $back;
-  color: $text;
-
+  background-color: rgb(98,0,0);
+  color: rgb(219,219,219);
 }
 
-.image {
-  width: 500px;
-  height: 300px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url('../img/methed.jpg');
+h1 {
+  font-family: 'Proletariat', serif;
+  margin: 0;
 }
+
+a {
+  text-decoration: none;
+  font-family: 'SpecialElite-Regular', serif;
+  color: rgb(219,219,219);
+  //margin: 0;
+}
+
+.alternative-colour {
+  color: rgb(98,0,0);
+}
+
+
+//.image {
+//  width: 500px;
+//  height: 300px;
+//  background-size: contain;
+//  background-position: center;
+//  background-repeat: no-repeat;
+//  background-image: url('../img/methed.jpg');
+//}

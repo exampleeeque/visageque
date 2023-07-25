@@ -1,5 +1,11 @@
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/montserrat-v23-latin_cyrillic-regular.woff2') format('woff2'),
-    url('../fonts/montserrat-v23-latin_cyrillic-regular.woff') format('woff');
+  font-family: 'Proletariat';
+  src: url('../fonts/proletariat.woff2') format('woff2'),
+    url('../fonts/proletariat.woff') format('woff');
+}
+
+@font-face {
+  font-family: SpecialElite-Regular;
+  src: url("../fonts/SpecialElite-Regular.woff2") format('woff2'),
+    url("../fonts/SpecialElite-Regular.woff") format('woff');
 }
