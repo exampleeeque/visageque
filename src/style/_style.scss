@@ -1,24 +1,28 @@
+* {
+  //margin: 0;
+  //padding: 0;
+  overflow: hidden;
+}
+
 body {
-  background-color: rgb(98,0,0);
-  color: rgb(219,219,219);
+  background-color: $base-color;
+  color: $text-color;
 }
 
 h1 {
   font-family: 'Proletariat', serif;
-  margin: 0;
+  //margin-top: 20px;
 }
 
 a {
   text-decoration: none;
   font-family: 'SpecialElite-Regular', serif;
-  color: rgb(219,219,219);
-  //margin: 0;
+  color: $text-color;
 }
 
-.alternative-colour {
-  color: rgb(98,0,0);
+.alternative-text-color {
+  color: $base-color;
 }
-
 
 //.image {
 //  width: 500px;
