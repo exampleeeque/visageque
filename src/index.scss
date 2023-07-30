@@ -32,14 +32,15 @@
   justify-self: end;
 }
 
-h1 {
+h1, h2 {
   font-size: 65px;
+  font-weight: lighter;
   margin: 0;
 }
 
 a {
   font-size: 25px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 hr {
@@ -47,7 +48,7 @@ hr {
   border: none;
   height: 2px;
   margin: 0;
-  position: relative;
+  //position: relative;
   //width: 100%;
   //display: block;
   //overflow: visible;
@@ -63,4 +64,26 @@ hr:before {
   //position: absolute;
   //top: 0;
   //z-index: 1;
+}
+
+.whole {
+  overflow: auto;
+}
+
+.right-side {
+  float: right;
+}
+
+.right-side img {
+  //width: 50%;
+  margin-top: 21vh;
+  width: 250px;
+  //margin: auto;
+  //display: block;
+  //margin: auto;
+}
+
+p {
+  margin: 0;
+  font-size: 25px;
 }
