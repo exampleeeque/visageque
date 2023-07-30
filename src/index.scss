@@ -71,19 +71,17 @@ hr:before {
 }
 
 .right-side {
-  float: right;
+  //float: right;
+  margin-left: 68vw;
 }
 
-.right-side img {
-  //width: 50%;
-  margin-top: 21vh;
-  width: 250px;
-  //margin: auto;
-  //display: block;
-  //margin: auto;
+img {
+  margin-top: 23vh;
+  width: 15vw;
 }
 
 p {
   margin: 0;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: bolder;
 }
