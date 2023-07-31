@@ -1,6 +1,7 @@
 * {
-  //margin: 0;
-  //padding: 0;
+  text-decoration: none;
+  font-family: 'SpecialElite-Regular', serif;
+  color: $text-color;
   overflow: hidden;
 }
 
@@ -9,15 +10,8 @@ body {
   color: $text-color;
 }
 
-.main-font {
+.secondary-font-font {
   font-family: 'Proletariat', serif;
-  //margin-top: 20px;
-}
-
-.secondary-font {
-  text-decoration: none;
-  font-family: 'SpecialElite-Regular', serif;
-  color: $text-color;
 }
 
 .alternative-text-color {
