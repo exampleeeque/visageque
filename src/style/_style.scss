@@ -1,7 +1,6 @@
 * {
   text-decoration: none;
   font-family: 'SpecialElite-Regular', serif;
-  color: $text-color;
   overflow: hidden;
 }
 
@@ -10,8 +9,12 @@ body {
   color: $text-color;
 }
 
-.secondary-font-font {
+.secondary-font {
   font-family: 'Proletariat', serif;
+}
+
+.main-text-color {
+  color: $text-color;
 }
 
 .alternative-text-color {
@@ -34,4 +37,5 @@ p {
 a {
   font-size: 25px;
   font-weight: bolder;
+  color: $text-color;
 }

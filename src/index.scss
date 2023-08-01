@@ -19,9 +19,9 @@
 .homepage {
   display: grid;
   grid-template-columns: repeat(4, 1fr) 2fr;
-  align-items: center;
-  justify-items: center;
+  place-items: center;
   margin-top: 7vh;
+  color: $base-color;
 }
 
 .homepage__text_start-grid {
@@ -32,7 +32,7 @@
   justify-self: end;
 }
 
-.links-phone-resolution {
+.links-phone-resolution, .links-phone-resolution_visible {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
@@ -59,7 +59,7 @@
 }
 
 
-hr {
+.double-colored-hr {
   background-color: $text-color;
   border: none;
   height: 2px;
@@ -112,7 +112,6 @@ hr {
   .homepage {
     display: grid;
     grid-template-columns: 3fr repeat(3, 1fr);
-
   }
 
   .homepage a {
