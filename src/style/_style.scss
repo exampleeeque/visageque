@@ -17,3 +17,21 @@ body {
 .alternative-text-color {
   color: $base-color;
 }
+
+
+h1, h2 {
+  font-size: 65px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 0;
+}
+
+a {
+  font-size: 25px;
+  font-weight: bolder;
+}

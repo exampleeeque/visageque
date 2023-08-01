@@ -2,6 +2,8 @@
 @import 'style/fonts';
 @import 'style/var';
 @import 'style/style';
+@import 'other-pages/contacts-page/contacts';
+@import 'other-pages/portfolio-page/portfolio';
 
 .background {
   position: absolute;
@@ -20,8 +22,6 @@
   align-items: center;
   justify-items: center;
   margin-top: 7vh;
-  //margin-left: 150px;
-  //margin-right: 150px;
 }
 
 .homepage__text_start-grid {
@@ -40,51 +40,38 @@
 }
 
 .right-side {
-  margin: 20vh 0 0 68vw;
+  position: relative;
+  margin-left: 50vw;
+  width: 50vw;
+  height: 100vh;
+
+  &__content {
+    position: absolute;
+    top: 20%;
+    left: calc(50% - 12.5vw);
+    width: min-content;
+    z-index: 1;
+  }
 }
 
-img {
-  width: 18vw;
+.right-side__image {
+  width: 25vw;
 }
 
-h1, h2 {
-  font-size: 65px;
-  font-weight: lighter;
-  margin: 0;
-}
-
-p {
-  font-size: 20px;
-  font-weight: bolder;
-  margin: 0;
-}
-
-a {
-  font-size: 25px;
-  font-weight: bolder;
-}
 
 hr {
   background-color: $text-color;
   border: none;
   height: 2px;
   margin: 0;
-  //position: relative;
-  //width: 100%;
-  //display: block;
-  //overflow: visible;
-}
 
-hr:before {
-  content: '';
-  display: block;
-  background-color: $base-color;
-  width: 50%;
-  height: 2px;
-  //left: 0;
-  //position: absolute;
-  //top: 0;
-  //z-index: 1;
+  &:before {
+      content: '';
+      display: block;
+      background-color: $base-color;
+      width: 50%;
+      height: 2px;
+  }
 }
 
 @media screen and (min-width: 2559px) {
@@ -164,23 +151,5 @@ hr:before {
 
   p {
     font-size: 8.5px;
-  }
-}
-
-@media screen and (max-height: 450px) {
-  .right-side {
-    margin: 10vh 0 0 68vw;
-  }
-}
-
-@media screen and (max-height: 400px) {
-  .right-side {
-    margin: 8vh 0 0 68vw;
-  }
-}
-
-@media screen and (max-height: 300px) {
-  .right-side {
-    margin-left: 68vw;
   }
 }
