@@ -1,15 +1,37 @@
-body {
-  font-family: 'Montserrat';
-  background-color: $back;
-  color: $text;
-
+* {
+  text-decoration: none;
+  font-family: 'SpecialElite-Regular', serif;
+  color: $text-color;
+  overflow: hidden;
 }
 
-.image {
-  width: 500px;
-  height: 300px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url('../img/methed.jpg');
+body {
+  background-color: $base-color;
+  color: $text-color;
+}
+
+.secondary-font-font {
+  font-family: 'Proletariat', serif;
+}
+
+.alternative-text-color {
+  color: $base-color;
+}
+
+
+h1, h2 {
+  font-size: 65px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 0;
+}
+
+a {
+  font-size: 25px;
+  font-weight: bolder;
 }

@@ -2,3 +2,154 @@
 @import 'style/fonts';
 @import 'style/var';
 @import 'style/style';
+@import 'other-pages/contacts-page/contacts';
+@import 'other-pages/portfolio-page/portfolio';
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 100vh;
+  z-index: -1;
+  background: $text-color url("img/background-left.jpg") no-repeat right;
+  background-size: cover;
+}
+
+.homepage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 2fr;
+  align-items: center;
+  justify-items: center;
+  margin-top: 7vh;
+}
+
+.homepage__text_start-grid {
+  justify-self: start;
+}
+
+.homepage__text_end-grid {
+  justify-self: end;
+}
+
+.links-phone-resolution {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin-top: 1vh;
+}
+
+.right-side {
+  position: relative;
+  margin-left: 50vw;
+  width: 50vw;
+  height: 100vh;
+
+  &__content {
+    position: absolute;
+    top: 20%;
+    left: calc(50% - 12.5vw);
+    width: min-content;
+    z-index: 1;
+  }
+}
+
+.right-side__image {
+  width: 25vw;
+}
+
+
+hr {
+  background-color: $text-color;
+  border: none;
+  height: 2px;
+  margin: 0;
+
+  &:before {
+      content: '';
+      display: block;
+      background-color: $base-color;
+      width: 50%;
+      height: 2px;
+  }
+}
+
+@media screen and (min-width: 2559px) {
+  h1, h2 {
+    font-size: 100px;
+  }
+
+  a {
+    font-size: 42px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  h1, h2 {
+    font-size: 50px;
+  }
+
+  a {
+    font-size: 19px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .links-phone-resolution {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homepage {
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr);
+
+  }
+
+  .homepage a {
+    display: none;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  a {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  a {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 8.5px;
+  }
+}

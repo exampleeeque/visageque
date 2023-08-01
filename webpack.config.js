@@ -28,6 +28,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'index.html'),
     }),
+    new HtmlWebpackPlugin({
+      filename: 'contacts.html',
+      template: path.resolve(__dirname, 'src/other-pages/contacts-page', 'contacts.html'),
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'portfolio.html',
+      template: path.resolve(__dirname, 'src/other-pages/portfolio-page', 'portfolio.html'),
+    }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
     }),
