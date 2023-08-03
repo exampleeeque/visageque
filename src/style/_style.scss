@@ -1,16 +1,12 @@
 * {
+  font-family: 'Proletariat', serif;
   text-decoration: none;
-  font-family: 'SpecialElite-Regular', serif;
-  overflow: hidden;
 }
 
 body {
   background-color: $base-color;
   color: $text-color;
-}
-
-.secondary-font {
-  font-family: 'Proletariat', serif;
+  overflow-x: hidden;
 }
 
 .main-text-color {
@@ -21,21 +17,23 @@ body {
   color: $base-color;
 }
 
-
-h1, h2 {
+h1, h2, h3 {
   font-size: 65px;
   font-weight: lighter;
   margin: 0;
 }
 
+a, p {
+  font-family: 'SpecialElite-Regular', serif;
+  font-weight: bolder;
+}
+
 p {
   font-size: 20px;
-  font-weight: bolder;
   margin: 0;
 }
 
 a {
   font-size: 25px;
-  font-weight: bolder;
   color: $text-color;
 }

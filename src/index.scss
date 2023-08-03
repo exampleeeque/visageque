@@ -43,11 +43,12 @@
   position: relative;
   margin-left: 50vw;
   width: 50vw;
-  height: 100vh;
+  height: 80vh;
 
   &__content {
     position: absolute;
-    top: 20%;
+    top: 14%;
+    //top: 20%;
     left: calc(50% - 12.5vw);
     width: min-content;
     z-index: 1;
