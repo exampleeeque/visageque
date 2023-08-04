@@ -5,6 +5,10 @@
 @import 'other-pages/contacts-page/contacts';
 @import 'other-pages/portfolio-page/portfolio';
 
+.alternative-background-color {
+  background-color: $base-color;
+}
+
 .background {
   position: absolute;
   top: 0;
@@ -12,7 +16,7 @@
   width: 50vw;
   height: 100vh;
   z-index: -1;
-  background: $text-color url("img/background-left.jpg") no-repeat right;
+  background: $text-color url("img/background-left.webp") no-repeat right;
   background-size: cover;
 }
 
@@ -32,7 +36,8 @@
   justify-self: end;
 }
 
-.links-phone-resolution, .links-phone-resolution_visible {
+.links-phone-resolution,
+.links-phone-resolution_visible {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
@@ -75,7 +80,7 @@
   }
 }
 
-@media screen and (min-width: 2559px) {
+@media only screen and (min-width: 2559px) {
   h1, h2 {
     font-size: 100px;
   }
@@ -89,9 +94,9 @@
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media only screen and (max-width: 1250px) {
   h1, h2 {
-    font-size: 50px;
+    font-size: 60px;
   }
 
   a {
@@ -103,27 +108,34 @@
   }
 }
 
-@media screen and (min-width: 767px) {
+@media only screen and (max-width: 1125px) {
+  h1, h2 {
+    font-size: 51px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  h1, h2 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
   .links-phone-resolution {
     display: none;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .homepage {
     display: grid;
     grid-template-columns: 3fr repeat(3, 1fr);
+    & a {
+      display: none;
+    }
   }
 
-  .homepage a {
-    display: none;
-  }
-
-  h1 {
-    font-size: 45px;
-  }
-
-  h2 {
+  h1, h2 {
     font-size: 35px;
   }
 
@@ -136,13 +148,15 @@
   }
 }
 
-@media screen and (max-width: 424px) {
-  h1 {
-    font-size: 35px;
+@media only screen and (max-width: 655px) {
+  h1, h2 {
+    font-size: 22px;
   }
+}
 
-  h2 {
-    font-size: 25px;
+@media only screen and (max-width: 424px) {
+  h1, h2 {
+    font-size: 17px;
   }
 
   a {

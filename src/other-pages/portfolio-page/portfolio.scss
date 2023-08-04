@@ -1,3 +1,52 @@
 .contacts-page {
   background-color: $text-color;
 }
+
+.portfolio-examples {
+  position: relative;
+  margin: 5vh 5vw;
+  height: 70vh;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  & h2 {
+    grid-row: 1;
+    grid-column: 4;
+    font-size: 100px;
+    margin-top: 35vh;
+  }
+}
+
+.portfolio-examples__portrait,
+.portfolio-examples__landscape {
+  border: 10px solid $base-color;
+  object-fit: cover;
+  width: 90%;
+  height: auto;
+}
+
+.portfolio-individuals {
+  grid-column: 1;
+  grid-row: 1/2;
+}
+
+.portfolio-loves {
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
+.portfolio-places {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.portfolio-restaurants {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.portfolio-events {
+  grid-column: 3/5;
+  grid-row: 3;
+}

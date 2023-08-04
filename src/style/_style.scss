@@ -1,20 +1,17 @@
-* {
+*,
+#alternative-font {
   font-family: 'Proletariat', serif;
   text-decoration: none;
 }
 
 body {
-  background-color: $base-color;
-  color: $text-color;
+  background-color: $text-color;
+  color: $base-color;
   overflow-x: hidden;
 }
 
 .main-text-color {
   color: $text-color;
-}
-
-.alternative-text-color {
-  color: $base-color;
 }
 
 h1, h2, h3 {
@@ -23,7 +20,8 @@ h1, h2, h3 {
   margin: 0;
 }
 
-a, p {
+.alternative-font,
+a, p, span, {
   font-family: 'SpecialElite-Regular', serif;
   font-weight: bolder;
 }
@@ -35,5 +33,5 @@ p {
 
 a {
   font-size: 25px;
-  color: $text-color;
+  color: $base-color;
 }
