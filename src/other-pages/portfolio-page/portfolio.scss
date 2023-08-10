@@ -8,15 +8,16 @@
     padding-bottom: 3vh;
   }
   & img{
-    border: 20px solid $base-color;
+    border: 10px solid $base-color;
     height: auto;
   }
   & p {
     position: absolute;
-    bottom: 25px;
+    left: 25px;
     font-size: 30px;
   }
 }
+
 
 .portfolio__individuals {
   width: 40%;
@@ -24,8 +25,7 @@
     max-width: 80%;
   }
   & p {
-    left: 25px;
-    bottom: 50px;
+    bottom: 40px;
   }
 }
 
@@ -42,8 +42,7 @@
     font-size: 100px;
   }
   & p {
-    left: 30px;
-    bottom: 20px;
+    bottom: 10px;
     white-space: nowrap;
   }
 }
@@ -55,8 +54,7 @@
     max-width: 90%;
   }
   & p {
-    top: 25px;
-    left: 25px;
+    top: 20px;
   }
 }
 
@@ -66,8 +64,7 @@
     max-width: 81.5%;
   }
   & p {
-    top: 25px;
-    left: 25px;
+    top: 20px;
   }
 }
 
@@ -84,21 +81,24 @@
     max-width: 50%;
   }
   & p {
-    left: 30px;
-    bottom: 20px;
+    bottom: 10px;
   }
 }
 
+.portfolio__loves:before,
+.portfolio__loves:after {
+  content: '';
+  border-right: 4px solid $base-color;
+  height: 165vh;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
-
-
-
-
-
-
-
-
-
+.portfolio__loves:before {
+  right: 100px;
+}
 
 @media only screen and (min-width: 2559px) {
   .portfolio__loves {
@@ -116,33 +116,74 @@
   .portfolio p {
     font-size: 23px;
   }
+
+  .portfolio__loves h2 {
+    bottom: -55px;
+  }
 }
 
 @media only screen and (max-width: 1125px) {
   .portfolio__loves h2 {
-    font-size: 80px;
+    font-size: 75px;
     bottom: -45px;
   }
 
-  .portfolio p {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 950px) {
   .portfolio p {
     font-size: 15px;
   }
 }
 
+@media only screen and (max-width: 950px) {
+  .portfolio__loves h2 {
+    bottom: -35px;
+  }
+
+  .portfolio__loves:before,
+  .portfolio__loves:after {
+    height: 135vh;
+  }
+}
+
 @media only screen and (max-width: 767px) {
+  .portfolio__individuals img {
+      max-width: 65%;
+  }
+
+  .portfolio__loves img {
+      max-width: 77%;
+  }
+
+  .portfolio__places img {
+      max-width: 75%;
+  }
+
+  .portfolio__restaurants img {
+      max-width: 66.5%;
+  }
+
+  .portfolio__events img {
+      max-width: 35%;
+  }
+
   .portfolio__loves h2 {
     font-size: 60px;
-    bottom: -20px;
+    bottom: -15px;
   }
 
   .portfolio p {
-    font-size: 12px;
+    font-size: 9px;
+  }
+
+  .portfolio__loves:before,
+  .portfolio__loves:after {
+    height: 95vh;
+  }
+}
+
+@media only screen and (max-width: 750px) and (max-height: 550px) {
+  .portfolio__loves:before,
+  .portfolio__loves:after {
+    height: 135vh;
   }
 }
 
@@ -150,15 +191,105 @@
   .portfolio p {
     font-size: 8px;
   }
+
+  .portfolio__loves:before,
+  .portfolio__loves:after {
+    height: 80vh;
+  }
+
+  .portfolio__loves:before {
+    right: 50px;
+  }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 460px) {
   .portfolio__loves h2 {
-    font-size: 50px;
-    bottom: -10px;
+    font-size: 45px;
+    bottom: -8px;
   }
 
   .portfolio p {
     font-size: 5px;
+  }
+
+  .portfolio__loves:before,
+  .portfolio__loves:after {
+    height: 62vh;
+  }
+
+  .portfolio__loves:before {
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .portfolio__loves:before {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 300px) {
+  .portfolio__loves:before,
+  .portfolio__loves:after {
+    height: 190vh;
+  }
+}
+
+
+@media only screen and (min-height: 1000px) {
+  .portfolio__loves:before,
+  .portfolio__loves:after {
+    height: 80vh;
+  }
+}
+
+@media only screen and (min-height: 1700px) {
+  .portfolio__loves:before,
+  .portfolio__loves:after {
+    height: 135vh;
+  }
+}
+
+@media only screen and (max-width: 460px) and (max-height: 920px) {
+  .portfolio__loves:before,
+  .portfolio__loves:after {
+    height: 60vh;
+  }
+}
+
+@media only screen and (max-height: 550px) {
+  .portfolio__loves h2 {
+    bottom: -30px;
+  }
+}
+
+
+@media only screen and (max-height: 450px) {
+  .portfolio__loves:before,
+  .portfolio__loves:after {
+    height: 225vh;
+  }
+
+  .portfolio__loves h2 {
+    bottom: -50px;
+  }
+}
+
+@media only screen and (max-height: 390px) {
+  .portfolio__loves:before,
+  .portfolio__loves:after {
+    height: 225vh;
+  }
+}
+
+@media only screen and (max-height: 375px) {
+  .portfolio h2 {
+    font-size: 48px;
+    bottom: -30px;
+  }
+
+  .portfolio__loves:before,
+  .portfolio__loves:after {
+    height: 175vh;
   }
 }
