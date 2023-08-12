@@ -1,5 +1,4 @@
-*,
-#alternative-font {
+* {
   font-family: 'Proletariat', serif;
   text-decoration: none;
 }
@@ -10,17 +9,22 @@ body {
   overflow-x: hidden;
 }
 
-.main-text-color {
+.alternativeBackgroundColor {
+  background-color: $base-color;
+}
+
+.alternativeTextColor {
   color: $text-color;
 }
 
 h1, h2, h3 {
-  font-size: 65px;
+  font-size: 60px;
   font-weight: lighter;
+  text-transform: uppercase;
   margin: 0;
 }
 
-.alternative-font,
+.alternativeFontFamily,
 a, p, span, {
   font-family: 'SpecialElite-Regular', serif;
   font-weight: bolder;
