@@ -63,7 +63,7 @@
     transition: font-size 0.25s linear;
 
     &:hover {
-      font-size: 32px;
+      font-size: 34px;
       transition: font-size 0.25s linear;
     }
 
@@ -148,7 +148,7 @@
 }
 
 // welcome part - content
-.content {
+.contentHome {
   position: absolute;
   top: 17%;
   left: calc(50% - 12.5vw);

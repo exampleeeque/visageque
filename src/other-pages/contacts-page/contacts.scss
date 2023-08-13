@@ -1,35 +1,109 @@
 // content - positioning
-.contacts {
+.contentContacts {
   position: relative;
   height: 75vh;
   margin: 4vh 0 0 20vw;
+  
+  @media (max-width: 1024px) {
+    height: 69vh;
+    margin-top: 10vh;
+  }
+
+  & * {
+    color: $text-color;
+  }
 
   & h2 {
-    color: $text-color;
+    font-size: 50px;
 
     @media (min-width: 1440px) {
       font-size: 70px;
     }
+
+    @media (max-width: 1024px) {
+      font-size: 45px;
+    }
   }
 
-  // social media
-  &__info {
+  & a {
+    position: relative;
+    font-family: 'SpecialElite-Regular', serif;
+    font-size: 20px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      transition: width 0.4s linear;
+      background-color: $text-color;
+    }
+
+    &:hover:after {
+        width: 100%;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 25px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
+  }
+}
+
+// contact-box
+.inner {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 55vw;
+    max-width: 63vw;
     height: auto;
-    margin-left: 15vw;
+    margin-left: 7vw;
     padding: 10px 0;
     gap: 15px;
     background-color: $base-color;
+}
+
+.media {
+  margin-left: 25vw;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__name {
+    margin-right: 5px;
+  }
+
+  &__name3 {
+    margin-left: 9px;
+  }
+
+  &__name4 {
+    margin-left: 33px;
+  }
+
+  &__link {
+    margin-top: 27px;
+
+    @media (max-width: 1024px) {
+      margin-top: 22px;
+    }
   }
 }
 
 // title - positioning
-.info__title {
+.title {
   position: absolute;
   bottom: -150px;
   left: -180px;
@@ -37,6 +111,12 @@
   @media (min-width: 1440px) {
     bottom: -190px;
     left: -220px;
+  }
+
+  @media (max-width: 1024px) {
+    bottom: -150px;
+    left: -180px;
+    font-size: 100px;
   }
 
   & h1 {
@@ -66,4 +146,9 @@
   z-index: -1;
   height: calc(89vh - 94px);
   border-right: 4px solid $base-color;
+  
+  @media (max-width: 1024px) {
+    left: 150px;
+    height: calc(86vh - 93px);
+  }
 }
