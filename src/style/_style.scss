@@ -4,9 +4,9 @@
 }
 
 body {
+  overflow-x: hidden;
   background-color: $text-color;
   color: $base-color;
-  overflow-x: hidden;
 }
 
 .alternativeBackgroundColor {
@@ -17,7 +17,7 @@ body {
   color: $text-color;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-size: 60px;
   font-weight: lighter;
   text-transform: uppercase;
@@ -25,7 +25,7 @@ h1, h2, h3 {
 }
 
 .alternativeFontFamily,
-a, p, span, {
+a, p {
   font-family: 'SpecialElite-Regular', serif;
   font-weight: bolder;
 }
