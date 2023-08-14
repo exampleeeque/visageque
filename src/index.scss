@@ -41,16 +41,16 @@
     justify-content: center;
   }
 
-  // current page
-  &__active {
-    opacity: 0.5;
-  }
-
   * {
 
     @media (max-width: 768px) {
       color: $base-color;
     }
+  }
+
+  // current page
+  &__active {
+    opacity: 0.5;
   }
 
   & h1 {
