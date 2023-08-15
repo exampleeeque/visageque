@@ -12,11 +12,11 @@
     margin-left: 0;
   }
 
-  & * {
+  * {
     color: $text-color;
   }
 
-  & h2 {
+  h2 {
     font-size: 50px;
 
     @media (min-width: 1440px) {
@@ -28,7 +28,7 @@
     }
   }
 
-  & a {
+  a {
     position: relative;
     font-family: 'SpecialElite-Regular', serif;
     font-size: 20px;
@@ -46,7 +46,7 @@
       content: "";
       position: absolute;
       bottom: 0;
-      left: 0;
+      right: 0;
       width: 0;
       height: 2px;
       transition: width 0.4s linear;
@@ -55,6 +55,7 @@
 
     &:hover:after {
         width: 100%;
+        left: 0;
     }
   }
 }
@@ -130,8 +131,8 @@
 // title - positioning
 .title {
   position: absolute;
-  bottom: -150px;
-  left: -180px;
+  bottom: -180px;
+  left: -210px;
 
   @media (min-width: 1440px) {
     bottom: -190px;
@@ -139,8 +140,8 @@
   }
 
   @media (max-width: 1024px) {
-    bottom: -150px;
-    left: -180px;
+    bottom: -180px;
+    left: -210px;
   }
 
   @media (max-width: 768px) {
@@ -148,8 +149,8 @@
     left: 0;
   }
 
-  & h1 {
-    font-size: 120px;
+  h1 {
+    font-size: 140px;
     color: $base-color;
 
     @media (min-width: 1440px) {
@@ -161,7 +162,7 @@
     }
   }
 
-  & span {
+  span {
 
     @media (max-width: 768px) {
       color: $base-color;
@@ -170,7 +171,7 @@
 }
 
 // lines from contact-box
-.rightLine {
+.contactsRightLine {
   position: absolute;
   top: 40px;
   right: -10vw;
@@ -187,17 +188,17 @@
   }
 }
 
-.bottomLine {
-  position: absolute;
-  top: 0;
-  left: 200px;
+
+.contactsBottomLine {
+  position: fixed;
+  top: 30%;
+  right: 55%;
   z-index: -1;
-  height: calc(89vh - 94px);
+  height: calc(50% + 50vh);
   border-right: 4px solid $base-color;
-  
+
   @media (max-width: 1024px) {
-    left: 150px;
-    height: calc(92vh - 93px);
+    right: 50%;
   }
 
   @media (max-width: 768px) {

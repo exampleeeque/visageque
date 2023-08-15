@@ -53,13 +53,13 @@
     opacity: 0.5;
   }
 
-  & h1 {
+  h1 {
     @media (min-width: 1024px) {
       font-size: 80px;
     }
   }
 
-  & a {
+  a {
     transition: font-size 0.25s linear;
 
     &:hover {
@@ -93,7 +93,7 @@
     opacity: 0.5;
   }
 
-  & a {
+  a {
 
     @media (max-width: 425px) {
       font-size: 20px;
