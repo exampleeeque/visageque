@@ -1,6 +1,15 @@
+html {
+  box-sizing: border-box;
+}
+
 * {
   font-family: 'Proletariat', serif;
   text-decoration: none;
+  box-sizing: inherit;
+
+  &:after, &:before {
+    box-sizing: inherit;
+  }
 }
 
 body {
