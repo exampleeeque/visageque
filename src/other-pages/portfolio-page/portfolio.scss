@@ -86,7 +86,6 @@
   }
 
   img {
-    height: auto;
     transition: border-width .5s linear;
     border: 13px solid $base-color;
 
@@ -120,7 +119,6 @@
 
   // text position for first session for phone resolution
   &__text_bottom1 {
-
     @media (max-width: 425px) {
       left: 55px;
     }
