@@ -11,53 +11,6 @@
   @media (max-width: 768px) {
     margin-left: 0;
   }
-
-  h2 {
-    font-size: 50px;
-
-    @media (min-width: 1440px) {
-      font-size: 70px;
-    }
-
-    @media (max-width: 1024px) {
-      font-size: 45px;
-    }
-  }
-
-  a {
-    position: relative;
-    font-family: 'SpecialElite-Regular', serif;
-    font-size: 20px;
-
-    @media (min-width: 1440px) {
-      font-size: 25px;
-    }
-
-    @media (max-width: 1024px) {
-      font-size: 16px;
-    }
-
-    // underline animation
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 0;
-      height: 2px;
-      transition: width .4s linear;
-      background-color: $text-color;
-    }
-
-    &:hover:after {
-        width: 100%;
-        left: 0;
-    }
-  }
-
-  h2, a {
-    color: $text-color;
-  }
 }
 
 // contact-box
@@ -125,6 +78,53 @@
       margin-top: 5px;
     }
   }
+
+  h2 {
+    font-size: 50px;
+
+    @media (min-width: 1440px) {
+      font-size: 70px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 45px;
+    }
+  }
+
+  a {
+    position: relative;
+    font-family: 'SpecialElite-Regular', serif;
+    font-size: 20px;
+
+    @media (min-width: 1440px) {
+      font-size: 25px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
+
+    // underline animation
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 2px;
+      transition: width .4s linear;
+      background-color: $text-color;
+    }
+
+    &:hover:after {
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  h2, a {
+    color: $text-color;
+  }
 }
 
 // title - positioning
@@ -148,7 +148,7 @@
     left: 0;
   }
 
-  h1 {
+  h2 {
     font-size: 140px;
     color: $base-color;
 
