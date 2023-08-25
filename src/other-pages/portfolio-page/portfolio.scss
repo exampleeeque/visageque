@@ -21,7 +21,7 @@
     &:nth-child(5),
     &:last-child {
       margin-top: 70px;
-      
+
       @media (max-width: 768px) {
         margin-top: 20px;
       }
@@ -96,6 +96,9 @@
 
   // type of the sessions
   &__text {
+    position: absolute;
+    bottom: 22px;
+    left: 17px;
     font-size: 23px;
 
     @media (max-width: 1024px) {
@@ -105,36 +108,16 @@
     @media (max-width: 425px) {
       font-size: 10px;
     }
-  }
 
-  &__text_bottom {
-    position: absolute;
-    bottom: 25px;
-    left: 20px;
-
-    @media (max-width: 425px) {
-      bottom: 25px;
-    }
-  }
-
-  // text position for first session for phone resolution
-  &__text_bottom1 {
-    @media (max-width: 425px) {
-      left: 55px;
+    &_top {
+      bottom: auto;
+      top: 20px;
     }
 
-    @media (max-width: 375px) {
-      left: 50px;
-    }
-  }
-
-  &__text_top {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-
-    @media (max-width: 425px) {
-      left: 60px;
+    &_phoneRes {
+      @media (max-width: 425px) {
+        margin-left: 10%;
+      }
     }
   }
 
@@ -149,7 +132,7 @@
       bottom: -100px;
       font-size: 100px;
     }
-    
+
     @media (max-width: 768px) {
       display: none;
     }

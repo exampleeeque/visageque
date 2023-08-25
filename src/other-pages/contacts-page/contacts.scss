@@ -3,7 +3,7 @@
   position: relative;
   height: 75vh;
   margin: 4vh 0 0 20vw;
-  
+
   @media (max-width: 1024px) {
     height: 69vh;
   }
@@ -27,7 +27,7 @@
   @media (max-width: 768px) {
     margin: 0 auto;
   }
-  
+
   @media (max-width: 425px) {
     width: 95vw;
   }
@@ -180,7 +180,7 @@
   @media (max-width: 768px) {
     right: calc(-18vw - 3px);
   }
-  
+
   @media (max-width: 425px) {
     display: none;
   }
