@@ -1,0 +1,156 @@
+.contentPortfolio {
+  margin: 4vh 5vw 0;
+}
+
+// sessions block
+.sessions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  div {
+    position: relative;
+
+    // margin-top for 3, 4, 5 sessions
+    &:nth-child(4),
+    &:nth-child(5),
+    &:last-child {
+      margin-top: 70px;
+
+      @media (max-width: 768px) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  // width of session-blocks
+  &__portrait {
+    flex-basis: 40%;
+  }
+
+  &__landscape {
+    flex-basis: 60%;
+  }
+
+  // vertical lines connecting 2 and 5 sessions
+  &__landscape1:before,
+  &__landscape1:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    height: 1350px;
+    border-right: 4px solid $base-color;
+
+    @media (max-width: 1024px) {
+      height: 1050px;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__landscape1:before {
+    right: 70px;
+  }
+
+  // positioning to the right last session
+  &__landscape2 {
+    margin-left: auto;
+  }
+
+  // image of the sessions
+  &__portrait-image {
+    width: 80%;
+
+    @media (max-width: 768px) {
+      width: 50vw;
+    }
+
+    @media (max-width: 425px) {
+      width: 80%;
+      margin-left: 10%;
+    }
+  }
+
+  &__landscape-image {
+    width: 100%;
+  }
+
+  img {
+    transition: border-width .5s linear;
+    border: 13px solid $base-color;
+
+    &:hover {
+      border-width: 4px;
+    }
+  }
+
+  // type of the sessions
+  &__text {
+    position: absolute;
+    bottom: 22px;
+    left: 17px;
+    font-size: 23px;
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 10px;
+    }
+
+    &_top {
+      bottom: auto;
+      top: 20px;
+    }
+
+    &_phoneRes {
+      @media (max-width: 425px) {
+        margin-left: 10%;
+      }
+    }
+  }
+
+  // title of the page
+  &__title {
+    position: absolute;
+    bottom: -115px;
+    left: 0;
+    font-size: 120px;
+
+    @media (max-width: 1024px) {
+      bottom: -100px;
+      font-size: 100px;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__title_phoneRes {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+
+    h2 {
+      font-size: 100px;
+
+      @media (max-width: 425px) {
+        font-size: 80px;
+      }
+    }
+  }
+}

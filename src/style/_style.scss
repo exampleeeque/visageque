@@ -1,37 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+
 * {
+  font-family: 'Proletariat', serif;
   text-decoration: none;
-  font-family: 'SpecialElite-Regular', serif;
-  color: $text-color;
-  overflow: hidden;
+  box-sizing: inherit;
+
+  &:after, &:before {
+    box-sizing: inherit;
+  }
 }
 
 body {
-  background-color: $base-color;
-  color: $text-color;
-}
-
-.secondary-font-font {
-  font-family: 'Proletariat', serif;
-}
-
-.alternative-text-color {
+  overflow-x: hidden;
+  background-color: $text-color;
   color: $base-color;
 }
 
+.altBackgroundColor {
+  background-color: $base-color;
+}
+
+.altTextColor {
+  color: $text-color;
+}
 
 h1, h2 {
-  font-size: 65px;
-  font-weight: lighter;
+  font-size: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
   margin: 0;
+}
+
+a, p, span {
+  font-family: 'SpecialElite-Regular', serif;
+  font-weight: 600;
 }
 
 p {
   font-size: 20px;
-  font-weight: bolder;
   margin: 0;
 }
 
 a {
   font-size: 25px;
-  font-weight: bolder;
+  color: $base-color;
 }

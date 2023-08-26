@@ -1,0 +1,214 @@
+// content - positioning
+.contentContacts {
+  position: relative;
+  height: 75vh;
+  margin: 4vh 0 0 20vw;
+
+  @media (max-width: 1024px) {
+    height: 69vh;
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
+}
+
+// contact-box
+.inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 63vw;
+  margin-left: 7vw;
+  padding: 15px 0;
+  gap: 15px;
+  background-color: $base-color;
+
+  @media (max-width: 768px) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: 425px) {
+    width: 95vw;
+  }
+}
+
+// align the text in the block to the center
+.media {
+  margin-left: 25vw;
+}
+
+// media-block - positioning
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  @media (max-width: 768px) {
+    display: grid;
+    place-items: center;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__name {
+    margin-right: 5px;
+  }
+
+  // telegram - positioning
+  &__name3 {
+    margin-left: 9px;
+  }
+
+  // e-mail - positioning
+  &__name4 {
+    margin-left: 33px;
+  }
+
+  &__link {
+    margin-top: 27px;
+
+    @media (max-width: 1024px) {
+      margin-top: 22px;
+    }
+
+    @media (max-width: 768px) {
+      margin-top: 5px;
+    }
+  }
+
+  h2 {
+    font-size: 50px;
+
+    @media (min-width: 1440px) {
+      font-size: 70px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 45px;
+    }
+  }
+
+  a {
+    position: relative;
+    font-family: 'SpecialElite-Regular', serif;
+    font-size: 20px;
+
+    @media (min-width: 1440px) {
+      font-size: 25px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
+
+    // underline animation
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 2px;
+      transition: width .4s linear;
+      background-color: $text-color;
+    }
+
+    &:hover:after {
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  h2, a {
+    color: $text-color;
+  }
+}
+
+// title - positioning
+.title {
+  position: absolute;
+  bottom: -180px;
+  left: -210px;
+
+  @media (min-width: 1440px) {
+    bottom: -190px;
+    left: -220px;
+  }
+
+  @media (max-width: 1024px) {
+    bottom: -180px;
+    left: -210px;
+  }
+
+  @media (max-width: 768px) {
+    bottom: -170px;
+    left: 0;
+  }
+
+  h2 {
+    font-size: 140px;
+    color: $base-color;
+
+    @media (min-width: 1440px) {
+      font-size: 150px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 70px;
+    }
+  }
+
+  span {
+    @media (max-width: 768px) {
+      color: $base-color;
+    }
+  }
+}
+
+// lines from contact-box
+.rightLine {
+  position: absolute;
+  top: 40px;
+  right: -10vw;
+  z-index: -1;
+  width: 200px;
+  border-bottom: 4px solid $base-color;
+
+  @media (max-width: 768px) {
+    right: calc(-18vw - 3px);
+  }
+
+  @media (max-width: 425px) {
+    display: none;
+  }
+}
+
+.bottomLine {
+  position: fixed;
+  top: 30%;
+  right: 55%;
+  z-index: -1;
+  height: calc(50% + 50vh);
+  border-right: 4px solid $base-color;
+
+  @media (max-width: 1024px) {
+    right: 50%;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+// zeroing margin for phones
+@media (max-width: 768px) {
+  .media,
+  .contacts__name,
+  .contacts__name3,
+  .contacts__name4 {
+    margin: 0;
+  }
+}
